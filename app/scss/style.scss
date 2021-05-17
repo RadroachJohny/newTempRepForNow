@@ -1,0 +1,41 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;  
+  scroll-behavior: smooth;
+  // overflow: auto;
+}
+body.is-locked {
+  overflow: hidden; /* добавить полосу прокрутки */ 
+}
+
+.wrapperbg {
+  background: url("../img/bg-line.svg") no-repeat center / cover;
+}
+
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "global";
+@import "modalpopup";
+@import "thanks";
+@import "header";
+@import "hero";
+@import "completed";
+@import "control";
+@import "types";
+@import "whatyouget";
+@import "fantasy";
+@import "design";
+@import "goal";
+@import "team";
+@import "clients";
+@import "bottom";
+@import "footer";
+
+img.lazy {
+  background: #F1F1FA;
+}
+
+@import "media";
+

@@ -1,0 +1,147 @@
+.completed {
+  background: #000 url("../img/city-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 71%;
+  padding-top: 170px;
+  padding-bottom: 415px;
+  color: #fff;
+
+  &__title {
+    margin-bottom: 33px;
+  }
+
+  &__slider{
+
+    &-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: 0 10px;
+    }
+
+    &-iteminfo {
+      max-width: 445px;
+    }
+
+    &-text {
+      font-size: 18px;
+      line-height: 1.61;
+      margin-bottom: 57px;
+    }
+
+    &-characteristics {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 82px;
+    }
+
+    &-info {
+      width: 42%;
+
+      &:first-child {
+        margin-bottom: 34px;
+      }
+    }
+
+    &-title {
+      font-family: 'Yeseva One', cursive;
+      font-size: 18px;
+      line-height: 1.38;
+      margin-bottom: 9px;
+      text-transform: uppercase;
+      color: $base-color;
+    }
+
+    &-descr {
+      font-size: 15px;
+      line-height: 1.33;
+
+      & span {
+        display: block;
+        line-height: 1.4;
+      }
+    }
+
+    &-photo {
+      max-width: 679px;
+      & img {
+        width: 100%;
+      }
+      
+
+    }
+  }
+
+  & .slick-arrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    z-index: 100;
+  }
+
+  & .slick-prev {
+    left: 10px;
+  }
+
+  & .slick-next {
+    left: 168px;
+  }
+
+  & .slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: -20px;
+
+  }
+
+  &__slick.slick-slider .slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    z-index: 100;
+    left: 72px;
+
+    li + li {
+      margin-left: 18px;
+      display: block;
+    }
+
+    & li button {
+      background: rgba(255, 255, 255, 0.3);
+      color: transparent;
+      border: none;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      outline : none;
+    }
+
+    & li.slick-active button {
+      background: #fff;
+    }
+  }
+
+  &__slick {
+    margin: 0 -10px;
+  }
+
+  .slick-arrow {
+    color: transparent;
+    width: 42px;
+  }
+
+  .slick-prev {
+    background: url('../img/arrow-left.svg') no-repeat center;
+  }
+
+  .slick-next {
+    background: url('../img/arrow-right.svg') no-repeat center;
+  }
+
+}
+
+

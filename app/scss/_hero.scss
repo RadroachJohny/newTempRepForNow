@@ -1,0 +1,98 @@
+.hero {
+  position: relative;
+  min-height: 500px;
+  height: calc(100vh - 46px);
+  width: 100%;
+  display: flex;
+  align-items: center;  
+
+
+  &__block {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    // width: 80%;
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &-content {
+      max-width: 445px;
+    }
+
+    &-title {
+      font-family: 'Yeseva One', cursive;
+      font-size: 40px;
+      line-height: 1.325;
+      text-transform: uppercase;
+      margin-bottom: 34px;
+
+      & span {
+        color: $base-color;
+      }
+    }
+
+    &-text {
+      font-family: "FuturaBook", sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 30px;
+      max-width: 433px;
+      margin-bottom: 15px;
+    }
+    
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    &-calc {
+      padding: 18px 26px;
+    }
+  }
+}
+
+.brand__button.hero__buttons-request {
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  padding: 19px 44px;
+  animation: breathing linear 4s infinite;
+}
+
+.scroll-down {
+  position: absolute;
+  left: 0;
+  bottom: -46px;
+  z-index: 2;
+  
+  
+
+  & p {
+    font-family: 'Yeseva One', cursive;
+    font-size: 12px;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 40px 90px 40px 48px;
+    background-color: #131313;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 15px;
+      width: 29px;
+      height: 29px;
+      background: url("../img/scrollDown.svg") no-repeat center;
+    }
+  }
+}
+
+@keyframes breathing {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.10);}
+  100% {transform: scale(1);}
+}

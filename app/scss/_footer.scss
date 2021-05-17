@@ -1,0 +1,65 @@
+.footer {
+  color: #fff;  
+  background-color: #131313;
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+  &__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #131313;
+    z-index: 3;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0 22px 0;
+    
+      &-contacts {
+        display: flex;
+        align-items: center;
+      }
+
+   &-phone{
+    font-family: "FuturaDemi", sans-serif;
+     color: $base-color;
+     margin-right: 45px;
+   }
+
+  }  
+
+    & .header__nav-callback {
+      padding: 13px 20px;
+    }
+
+  .logo {
+    font-family: "FuturaDemi", sans-serif;
+    color: $base-color;
+    text-transform: uppercase;
+  }
+
+
+  &__menu {
+    display: flex;
+
+    &-list + &-list {
+      margin-left: 40px;
+    }
+
+    &-link {
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1.14;
+      
+      &--active {
+        color: $base-color;
+      }
+    }
+  }
+}

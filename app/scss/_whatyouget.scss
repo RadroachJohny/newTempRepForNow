@@ -1,0 +1,263 @@
+.whatyouget {
+  padding-top: 117px;
+  padding-bottom: 36px;
+  margin-bottom: 240px;
+  background: url("../img/whatyouget-bg.png") no-repeat center / contain;
+  background-position: left 19% center;
+  background-size: 38%;
+
+  & .brand__button {
+    padding: 19px 36px;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    min-height: 554px;
+  }
+
+  &__favour {
+    margin-right: 10px;
+    background-position: center bottom;
+    display: flex;
+    min-height: 554px;
+    width: 56%;
+
+    &-item {
+      margin-left: auto;
+      width: 52%;
+      padding-top: 22px;
+    }
+  }
+
+  
+  &__piggy {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-39%);
+    left: -113px;
+
+  }
+
+  .whatyouget__form-group {
+    position: relative;
+  }
+  
+  #whatyouget__name-error,
+  #whatyouget__email-error,
+  #policymodalCheckbox-error,
+  #whatyouget__tel-error {
+    color: red;
+    position: absolute;
+    bottom: -15px;
+  }
+  #policymodalCheckbox-error {
+    transform: translateY(10px);
+  }
+
+}
+
+.favour-item { 
+
+  &__text:nth-child(1) {
+    margin-bottom: 95px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -71px;
+      left: -447px;
+      width: 386px;
+      height: 70px;
+      background: url("../img/line-top.svg");
+      background-size: cover;
+  }
+}
+
+  &__text:nth-child(2) {
+    margin-bottom: 143px;
+    margin-left: 81px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -90px;
+      left: -95px;
+      width: 51px;
+      height: 68px;
+      background: url("../img/line-1.svg");
+      background-size: cover;
+    }
+  }
+
+  &__text:nth-child(3) {
+    margin-bottom: 129px;
+    margin-left: 105px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -120px;
+      left: -49px;
+      width: 22px;
+      height: 100px;
+      background: url("../img/line-2.svg");
+      background-size: cover;
+    }
+  }
+
+  &__text:nth-child(4) {
+    margin-left: 53px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -107px;
+      left: -28px;
+      width: 46px;
+      height: 97px;
+      background: url("../img/line-3.svg");
+      background-size: cover;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 420px;
+      height: 101px;
+      bottom: -110px;
+      left: -476px;
+      background: url("../img/line-bottom.svg");
+      background-size: cover;
+    }
+  }
+
+  &__text {
+    position: relative;
+    font-family: "FuturaMedium", sans-serif;
+    color: #363636;
+    font-size: 18px;
+    line-height: 1.16;
+
+    span{
+     font-family: 'Yeseva One', cursive;
+     font-size: 18px;
+     line-height: 1.38;
+     position: absolute;
+     left: -45px;
+     top: 50%;
+     transform: translateY(-50%);
+     color: #fff;
+
+     &::before {
+       content: "";
+       position: absolute;
+       width: 41px;
+       height: 41px;
+       background: $base-color;
+       border-radius: 50%;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       z-index: -1;
+     }
+   }
+  } 
+
+}
+
+.form-box {
+  
+  &__header {
+    margin: 0 auto;
+    font-family: "FuturaDemi", sans-serif;
+    font-size: 20px;
+    line-height: 1.20;
+    max-width: 297px;
+    text-align: center;
+    margin-bottom: 39px;
+
+  }
+}
+
+#popup__form-checkbox,
+#whatyouget__form-checkbox {
+  position: absolute;
+  width: auto;
+}
+
+.popup,
+.whatyouget {
+  &__form {
+
+    &-box {
+      width: 506px;
+      padding: 28px 49px;
+      background: #131313 url("../img/popup-bg.svg") no-repeat center / cover;
+      color: #fff;
+    }
+
+  }
+
+  .confirmation label {
+    color: inherit;
+  }
+  
+  &__form-group + &__form-group {
+    margin-top: 48px;
+  }
+
+  &__form-group {
+    label{
+      display: block;
+      font-size: 15px;
+      line-height: 1;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    input {
+      width: 100%;
+      background: transparent;
+      border-color: transparent transparent rgba(54, 54, 54, 0.3) transparent;
+      padding: 6px 10px 6px 0;
+      font-size: 18px;
+      color: #fff;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    &.confirmation {
+      margin-top: 16px;
+      display: block;
+      margin-bottom: 39px;
+    }
+
+  }
+
+  &__btn {
+    display: block;
+    margin-left: auto;    
+  }
+
+  &__save {
+    position: absolute;
+    font-family: "FuturaDemi";
+    right: 60px;
+    bottom: -70px;
+    font-size: 20px;
+    line-height: 1.25;
+    color: $base-color;
+    max-width: 318px;
+  }
+}

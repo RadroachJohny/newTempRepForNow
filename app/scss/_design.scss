@@ -1,0 +1,12 @@
+.design {
+  margin-bottom: -1px;
+    &::before {
+      display: none;
+    }
+  
+
+  .mobile__visible {
+    display: none;
+  }
+
+}

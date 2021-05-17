@@ -1,0 +1,28 @@
+.team,
+.design,
+.types {
+  padding-top: 142px;
+  padding-bottom: 90px;
+
+  &__cards {
+
+    &-row {
+      margin-top: 31px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-card {
+      max-width:392px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-card + &-card {
+      margin-left: 20px;
+    }
+  }
+}
+

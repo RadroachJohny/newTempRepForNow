@@ -1,0 +1,149 @@
+.fantasy {
+  background: #181818 url("../img/fantasy-bg.jpg") no-repeat center / cover;
+  // background-size: 100%;
+  position: relative;
+  padding: 135px 0 85px 0;
+  margin-bottom: -1px;
+  
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__style {
+
+    &-header {
+      max-width: 411px;
+      width: 100%;
+      margin-bottom: 47px;
+      &::after {
+        display: none;
+      }
+    }
+
+  }
+
+  &__pictures {
+    display: flex;
+    position: absolute;
+    // top: 0;
+    right: 0;
+    width: 60%;
+  }
+
+  .picture__box {
+    img {
+      width: 100%;
+    }
+
+    &:first-child {
+      margin-top: -40px;
+      margin-right: 43px;
+
+      .fantasy__picture-boxcontainer:first-child {
+        margin-bottom: 40px;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-top: -106px;
+
+      .fantasy__picture-boxcontainer:first-child {
+        margin-bottom: 40px;
+      }
+    }
+    
+  }
+
+  &__mobile {
+    display: none;
+
+    &-slider {
+      .slick-arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: $base-color;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        transform: translateY(-50%);
+
+      }
+
+      .slick-prev {
+        left: 13px;
+      }
+
+      .slick-next{
+        right: 13px;
+      }
+    }
+
+    .fantasy__style-header {
+      max-width: 500px;
+      margin: 0 auto;
+      width: auto;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+  }
+
+  .slick-slide img {
+    display: inline-block;
+  }
+  
+  .mobile-slider {
+    &__container {
+      text-align: center;
+    }
+  }
+
+}
+
+
+
+.style-list {
+  &__li {
+    margin-bottom: 15px;
+    & a {
+      color: #fff;
+      font-size: 20px;
+      line-height: 1.7;
+    }
+    .style-list__link--active {
+      color: $base-color;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 62%;
+        background: $base-color;
+      }
+    }
+
+  }
+
+
+}
